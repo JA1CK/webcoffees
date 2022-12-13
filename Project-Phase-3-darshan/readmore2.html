@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Darshan2css/readmore2.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <title>Coffee Shop </title>
+</head>
+<body>
+    <header class="header">
+
+        <a href="#" class="logo">
+            <img src="Darshan2images/logo.png" alt="">
+        </a>
+
+        <nav class="navbar">
+            <a href="/finalHumberWebProject/index.html">home</a>
+            <a href="/finalHumberWebProject/index.html#about">about</a>
+            <a href="/finalHumberWebProject/index.html#menuCoffee">menu</a>
+            <a href="/finalHumberWebProject/index.html#menuSnacks">snacks</a>
+            <a href="/finalHumberWebProject/Project-Phase-3-ayush/ayush.html">products</a>
+            <a href="/finalHumberWebProject/Project-Phase-3-ayush/ayush2.html">review</a>
+            <a href="/finalHumberWebProject/Project-Phase-3-ayush/contact.html">contact</a>
+            <a href="/finalHumberWebProject/Project-Phase-3-darshan/Darshan2.html">blogs</a>
+        </nav>
+
+        <div onmousedown="mDown(this)" onmouseup="mUp(this)"
+        style="background-color:black; width:120px; height:60px; text-align: center; color: white; font-size: medium;">
+        Welcome To My Coffee Shop</div>
+    
+        <script>
+            function mDown(obj) {
+                obj.style.backgroundColor = "##FFFFFF";
+                obj.innerHTML = "Enjoy your Coffeeee";
+            }
+    
+            function mUp(obj) {
+                obj.style.backgroundColor="##FFFFFF";
+                obj.innerHTML="Please visit again Thank you.....";
+            }
+        </script>
+     </header>
+
+<!-- readmore section starts  -->
+
+    <section class="blogs" id="blogs">
+
+        <h1 class="heading"> Read <span>More </span> </h1>  
+        <h1 class="heading"> Read <span>More</span> </h1>
+    
+        <div class="box-container">
+    
+            <div class="box">
+                <div class="image">
+                    <img id = 'imgg1' src="Darshan2images/blog-1.jpeg" alt="" onmouseover="onHover(this)" onmouseout="offHover(this);">
+                </div>
+                <div class="content">
+                    <h2>tasty and refreshing coffee</h2>
+                    <span>Brew</span>
+                    <p>Aroma and taste are the overriding factors determining coffee preference. Coffee aroma descriptors include flowery, nutty, smoky, and herby, while taste descriptors include acidity, bitterness, sweetness, saltiness and sourness. The level of roasting impacts aroma profiles. Research has suggested that lighter roasts preserve the herb and fruit notes, whilst smoky and burnt aromas are increased, and acidity reduced, in darker roasts </p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img id = 'imgg2' src="Darshan2images/blog-2.jpeg" alt="" onmouseover="onHover(this)" onmouseout="offHover(this);">
+                </div>
+                <div class="content">
+                    <h2>tasty and refreshing coffee</h2>
+                    <span>Espresso</span>
+                    <p>The sensory profile of a cup of coffee varies according to a number of factors including: the type and blend of coffee beans; geographical source; roasting method, and method of preparation10,11. The variation in these aspects will impact the overall sensory experience obtained from a cup of coffee during both the preparation and consumption of the coffee. Specific aroma and flavour profiles are described by sensory experts to differentiate different types of coffees and roasts. </p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img id = 'imgg3' src="Darshan2images/blog-3.jpeg" alt="" onmouseover="onHover(this)" onmouseout="offHover(this);">
+                </div>
+                <div class="content">
+                    <h2>tasty and refreshing coffee</h2>
+                    <span>Decaf</span>
+                    <p>Aroma and taste are the overriding factors determining coffee preference. Coffee aroma descriptors include flowery, nutty, smoky, and herby, while taste descriptors include acidity, bitterness, sweetness, saltiness and sourness. The level of roasting impacts aroma profiles. Research has suggested that lighter roasts preserve the herb and fruit notes, whilst smoky and burnt aromas are increased, and acidity reduced, in darker roasts </p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+<!-- readmore section starts  -->    
+
+    <section class="footer">
+    
+        <div class="links">
+            <a href="/finalHumberWebProject/index.html">home</a>
+            <a href="/finalHumberWebProject/index.html#about">about</a>
+            <a href="/finalHumberWebProject/index.html#menuCoffee">menu</a>
+            <a href="/finalHumberWebProject/index.html#menuSnacks">snacks</a>
+            <a href="/finalHumberWebProject/Project-Phase-3-ayush/ayush.html">products</a>
+            <a href="/finalHumberWebProject/Project-Phase-3-ayush/ayush2.html">review</a>
+            <a href="/finalHumberWebProject/Project-Phase-3-ayush/contact.html">contact</a>
+            <a href="/finalHumberWebProject/Project-Phase-3-darshan/Darshan2.html">blogs</a>
+        </div>
+
+        <div class="icons">
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        </div>
+    
+        
+    </section>
+    <script>
+
+        function onHover(x)
+        {
+            if(x.id=="imgg1")
+            {
+                $(`#${x.id}`).attr('src', 'Darshan2images/blog-1.jpeg');
+            }
+            if(x.id=="imgg2")
+            {
+                $(`#${x.id}`).attr('src', 'Darshan2images/blog-2.jpeg');
+            }
+            if(x.id=="imgg3")
+            {
+                $(`#${x.id}`).attr('src', 'Darshan2images/blog-3.jpeg');
+            }
+        
+        }
+    
+        function offHover(x)
+        {
+            if(x.id=="imgg1")
+            {
+                $(`#${x.id}`).attr('src', 'Darshan2images/coffee1.jpg');
+            }
+            if(x.id=="imgg2")
+            {
+                $(`#${x.id}`).attr('src', 'Darshan2images/coffee2.jpg');
+            }
+            if(x.id=="imgg3")
+            {
+                $(`#${x.id}`).attr('src', 'Darshan2images/coffee3.jpg');
+            }
+        }
+    </script>
+    
+    
+</body>
+</html>

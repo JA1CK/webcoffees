@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styleJainish/style.css" />
+    <link rel="shortcut icon" href="imagesJainish/logo.png" type="image/x-icon" />
+    <title>coffee shop</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <a href="#" class="logo">
+        <img src="imagesJainish/logo.png" alt="" />
+      </a>
+
+      <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#menu">menu</a>
+        <a href="#snacks">snacks</a>
+        <a href="#products">products</a>
+        <a href="#review">review</a>
+        <a href="#contact">contact</a>
+        <a href="#blogs">blogs</a>
+      </nav>
+
+      <div class="cart-items-container">
+        <div id="cartItems"></div>
+        <a href="#" class="btn" onclick="checkOut()" id="checkOutBtn">checkout now</a>
+      </div>
+
+      <div class="icons">
+        <div class="fas fa-shopping-cart" id="cart-btn" onclick="showCart(this)"></div>
+      </div>
+      
+    </header>
+
+    <section class="home" id="home">
+      <div class="content">
+        <h3>
+          fresh
+          <span style="color: #62503b; text-shadow: #f1e3d1 1px 1px 2px"
+            >coffee</span
+          >
+          in the morning
+        </h3>
+        <p>A bad day with coffee is better than a good day without it.</p>
+        <a href="#" class="btn">get yours now</a>
+      </div>
+    </section>
+
+    <section class="menu" id="menuCoffee">
+      <h1 class="heading">our <span>coffees</span></h1>
+
+      <div class="box-container">
+        <div class="box">
+          <img src="imagesJainish/" alt="Latte" />
+          <h3>Latte</h3>
+          <div class="price">$1.59/- <span>2.99</span></div>
+          <a href="#" class="btn" onclick="addCart(this)">add to cart</a>
+        </div>
+
+        <div class="box">
+          <img src="imagesJainish/menu-2.png" alt="Cappuccino" />
+          <h3>Cappuccino</h3>
+          <div class="price">$3.59/- <span>5.99</span></div>
+          <a href="#" class="btn" onclick="addCart(this)">add to cart</a>
+        </div>
+
+        <div class="box">
+          <img src="imagesJainish/menu-3.png" alt="Americano" />
+          <h3>Americano</h3>
+          <div class="price">$2.99/- <span>4.99</span></div>
+          <a href="#" class="btn" onclick="addCart(this)">add to cart</a>
+        </div>
+
+        <div class="box">
+          <img src="imagesJainish/menu-4.png" alt="Espresso" />
+          <h3>Espresso</h3>
+          <div class="price">$3.99/-</div>
+          <a href="#" class="btn" onclick="addCart(this)">add to cart</a>
+        </div>
+
+        <div class="box">
+          <img src="imagesJainish/menu-5.png" alt="Black coffee" />
+          <h3>Black coffee</h3>
+          <div class="price">$2.99/-</div>
+          <a href="#" class="btn" onclick="addCart(this)">add to cart</a>
+        </div>
+
+        <div class="box">
+          <img src="imagesJainish/menu-6.png" alt="Mocha" />
+          <h3>Mocha</h3>
+          <div class="price">$4.00/- <span>6.99</span></div>
+          <a href="#" class="btn" onclick="addCart(this)">add to cart</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu" id="menuSnacks">
+      <h1 class="heading">our <span>snacks</span></h1>
+
+      <div class="box-container">
+        <div class="box">
+          <img src="imagesJainish/sandwich.jpg" alt="sandwich" />
+          <h3>Sandwich</h3>
+          <div class="price">$8.99/- <span>10.99</span></div>
+          <a href="#" class="btn" onclick="addCart(this)">add to cart</a>
+        </div>
+
+        <div class="box">
+          <img src="imagesJainish/burgers.jpg" alt="burgers" />
+          <h3>Burgers</h3>
+          <div class="price">$10.99/-</div>
+          <a href="#" class="btn" onclick="addCart(this)">add to cart</a>
+        </div>
+
+        <div class="box">
+          <img src="imagesJainish/cookies.jpg" alt="cookies" />
+          <h3>Cookies</h3>
+          <div class="price">$8.00/- <span>11.99</span></div>
+          <a href="#" class="btn" onclick="addCart(this)">add to cart</a>
+        </div>
+
+        <div class="box">
+          <img src="imagesJainish/fries.jpg" alt="fries" />
+          <h3>Fries</h3>
+          <div class="price">$3.50/- <span>5.99</span></div>
+          <a href="#" class="btn" onclick="addCart(this)">add to cart</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <h1 class="heading"><span>about</span> us</h1>
+
+      <div class="row">
+        <div class="image">
+          <img src="imagesJainish/about-coffee.jpg" alt="" />
+        </div>
+
+        <div class="content">
+          <h3>what makes our Website Special?</h3>
+          <p>
+            Using this website customers can view different types of coffee,
+            snacks and also different products which is available in our
+            websites like raw coffee beans.
+          </p>
+          <p>
+            Also customers can purchase any items from the website like
+            coffee,snacks and raw coffee and give their opinion and review about
+            our products on this Website.
+          </p>
+          <p>
+            There are many social media links are available for customers to
+            follow us and get newly update on time to time. Also anybody reach
+            us using by sending us a mail through our contact form.
+          </p>
+          <a href="#" class="btn">learn more</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="share">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+        <a href="#" class="fab fa-pinterest"></a>
+      </div>
+
+      <div class="links">
+        <a href="home">home</a>
+        <a href="about">about</a>
+        <a href="menuCoffee">menu</a>
+        <a href="menuCoffee">snacks</a>
+        <a href="#">products</a>
+        <a href="#">review</a>
+        <a href="#">contact</a>
+        <a href="#">blogs</a>
+      </div>
+    </footer>
+
+    <script src="JsJainish/index.js"></script>
+  </body>
+</html>
